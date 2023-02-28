@@ -1,0 +1,96 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Windows.Forms;
+
+
+
+// Some simple console + windows app
+
+
+namespace Some_Homework
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            /*
+
+            string name, surname;
+            Console.Write("Enter your name: ");
+            name = Console.ReadLine();
+            Console.Write("Enter your surname: ");
+            surname = Console.ReadLine();
+            Console.WriteLine("Nice to meet you " + name + " " + surname + "!");
+
+            */
+
+            /*
+            string name, surname;
+
+            name = Interaction.InputBox("What is your name?", "Hi there");
+            surname = Interaction.InputBox("What is your surname?", "Hi there");
+            MessageBox.Show("Nice to meet you " + name + " " + surname + "!", "Hi there", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+            */
+
+
+
+
+
+
+            /*
+            string name;
+            int age;
+
+            Console.Title = "Hi there";
+            Console.Write("Enter your name: ");
+            name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Nice to meet you {name}, you are {age} years old!");
+            */
+
+            /*
+            string name, ageText;
+            int age;
+
+            name = Interaction.InputBox("Enter your name please: ", "Hi there");
+            ageText = Interaction.InputBox("Enter your age please: ", "Hi there");
+            age = Int32.Parse(ageText);
+            MessageBox.Show("Nice to meet you " + name + " You are " + age + " years old!", "Hi there!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+            */
+
+            /*
+            string nameOfTheDay;
+            string nameOfTheMonth;
+            int dayInTheMonth;
+
+            Console.Write("Enter name of the currenth month: ");
+            nameOfTheMonth = Console.ReadLine();
+            Console.Write("Enter name of the currenth day: ");
+            nameOfTheDay = Console.ReadLine();
+            Console.Write("Enter current number of day in this month: ");
+            dayInTheMonth = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Now is {nameOfTheMonth}, the day now is {nameOfTheDay} and number of day is {dayInTheMonth}");
+
+            */
+
+            /*
+            string nameOfTheDay;
+            string nameOfTheMonth;
+            string dayInTheMonthText;
+            int dayInTheMonth;
+
+            nameOfTheDay = Interaction.InputBox("Enter name of the currenth day:", "Date");
+            nameOfTheMonth = Interaction.InputBox("Enter name of the currenth month:", "Date");
+            dayInTheMonthText = Interaction.InputBox("Enter current number of day in this month:", "Date");
+            dayInTheMonth = Int32.Parse(dayInTheMonthText);
+            MessageBox.Show("Now is " + nameOfTheMonth + "," + nameOfTheDay + " and number of day is: " + dayInTheMonth , "Date", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+            */
+
+        }
+    }
+}
