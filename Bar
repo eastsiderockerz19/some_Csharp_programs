@@ -1,0 +1,60 @@
+using System;
+
+namespace practice
+{
+    class Programm
+    {
+        static void Main()
+        {
+            string name;
+            int age;
+            string drinks;
+
+            Console.Title = "This is a test console";
+            Console.WriteLine("Hello what is your name?: ");
+            name = Console.ReadLine();
+            Console.WriteLine("Nice to meet you " + name);
+
+            Console.Write("How old are you?: ");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            if(age >= 18)
+            {
+                Console.WriteLine("Welcome");
+                Console.Write("What drink you would like: \n1) Cola, \n2) Fanta, \n3) Sprite?:\n");
+                Console.Write("Your choise: ");
+                drinks = Console.ReadLine();
+                switch (drinks)
+                {
+                    case "1":
+                    case "2":
+                    case "3":
+                        Console.WriteLine("With ice?");
+                        Console.Write("Yes/No: ");
+                        string answer;
+                        answer = Console.ReadLine();
+                        if (answer == "Yes" || answer == "yes")
+                        {
+                            Console.WriteLine("Nice choise!");
+                        }
+                        else if (answer == "No" || answer == "no")
+                        {
+                            Console.WriteLine("There you go!");
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("There isn't such option");
+                        Console.ReadLine();
+                        break;
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("You are too young, bye!");
+            }
+
+            
+        }
+    }
+}
